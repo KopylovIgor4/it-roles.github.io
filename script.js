@@ -25,7 +25,3 @@ nav.querySelectorAll('a').forEach((link) => {
     menuButton.textContent = '☰';
   });
 });
-
-// ВАЖНО: замените ссылку ниже на username вашего Telegram-бота.
-const TELEGRAM_BOT_URL = 'https://t.me/';
-document.querySelector('#botLink').href = TELEGRAM_BOT_URL;
