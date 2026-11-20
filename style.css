@@ -39,9 +39,24 @@ a {
   z-index: 20;
 }
 .brand {
-  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 21px;
   font-weight: 800;
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+.brand-emblem {
+  width: 39px;
+  height: 39px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #9b8cff88;
+  box-shadow: 0 0 18px #7667ff35;
+}
+.brand-name span {
+  color: #a99cff;
 }
 .brand-mark {
   color: #9b8cff;
@@ -231,15 +246,12 @@ a {
   border-radius: 50%;
   animation: spin 30s linear infinite;
 }
-.core-symbol {
-  font-size: 65px;
-  font-weight: 800;
-  letter-spacing: -7px;
-}
-.core-symbol span {
-  color: #9c8dff;
-  font-size: 32px;
-  vertical-align: top;
+.core-emblem {
+  width: 142px;
+  height: 142px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 18px #8c7bff55);
 }
 .core-caption {
   text-align: center;
@@ -775,6 +787,13 @@ a {
   }
   .header {
     height: 70px;
+  }
+  .brand {
+    font-size: 19px;
+  }
+  .brand-emblem {
+    width: 35px;
+    height: 35px;
   }
   .nav,
   .header-cta {
